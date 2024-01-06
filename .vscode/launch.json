@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name"   : "Attach to packager",
+            "request": "attach"            ,
+            "type"   : "reactnative"       ,
+            "cwd"    : "${workspaceFolder}"
+        },
+        {
+            "name": "Run macOS Hermes - Experimental",
+            "request": "launch",
+            "type": "reactnativedirect",
+            "cwd": "${workspaceFolder}",
+            "enableDebug": false,
+            "platform": "macos"
+        },
+        {
             "name": "Attach to the React Native iOS - Experimental",
             "cwd": "${workspaceFolder}",
             "type": "reactnativedirect",
@@ -13,9 +27,9 @@
             "port": 19001
         },
         {
-            "name": "Attach to packager",
-            "cwd": "${workspaceFolder}",
-            "type": "reactnative",
+            "name"   : "Attach to packager",
+            "cwd"    : "${workspaceFolder}",
+            "type"   : "reactnative"       ,
             "request": "attach"
         }
     ]
